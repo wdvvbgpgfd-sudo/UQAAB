@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UQAAB PHARMA| Trusted Pharmaceutical Distributor</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    color:#fff;
+    line-height:1.7;
+    background:#071a1d;
+}
+
+/* Background */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        linear-gradient(rgba(0,25,30,.82),rgba(0,15,20,.92)),
+        url("https://i.ibb.co/MDKh96Sh/0cb82c63-986c-4641-9d1e-14bd768586e1.jpg ");
+    background-size:cover;
+    background-position:center;
+    z-index:-1;
+}
+
+/* Navigation */
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(0,20,25,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(0,229,255,.2);
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#00e5ff;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* Hero */
+.hero{
+    min-height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border:1px solid #00e5ff;
+    border-radius:30px;
+    color:#00e5ff;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.hero h1{
+    font-size:clamp(42px,8vw,78px);
+    letter-spacing:5px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#d7f9fc;
+    max-width:700px;
+    margin:auto;
+}
+
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:13px 25px;
+    border-radius:30px;
+    background:#00c9d8;
+    color:#001418;
+    font-weight:bold;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+    background:#00e5ff;
+}
+
+/* Sections */
+section{
+    max-width:1100px;
+    margin:35px auto;
+    padding:45px 30px;
+}
+
+.section-box{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
+
+h2{
+    color:#00e5ff;
+    font-size:32px;
+    margin-bottom:18px;
+}
+
+p{
+    color:#e7f7f8;
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+
+.card{
+    padding:25px;
+    background:rgba(0,0,0,.25);
+    border-radius:15px;
+    border:1px solid rgba(0,229,255,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#00e5ff;
+}
+
+.card h3{
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+/* Lists */
+ul{
+    padding-left:22px;
+}
+
+li{
+    margin:10px 0;
+    color:#e7f7f8;
+}
+
+/* Contact */
+.contact-item{
+    margin:15px 0;
+}
+
+.contact-item strong{
+    color:#00e5ff;
+}
+
+.contact-item a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.contact-item a:hover{
+    color:#00e5ff;
+}
+
+/* WhatsApp */
+.whatsapp{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 22px;
+    border-radius:30px;
+    background:#20c96b;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:30px 20px;
+    background:rgba(0,0,0,.75);
+    margin-top:50px;
+    color:#b9dfe2;
+}
+
+/* Mobile */
+@media(max-width:700px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav a{
+        margin:0 7px;
+        font-size:12px;
+    }
+
+    .hero{
+        min-height:75vh;
+    }
+
+    section{
+        margin:20px 12px;
+        padding:30px 20px;
+    }
+
+    h2{
+        font-size:27px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="logo">UQAAB PHARMA</div>
+
+    <div>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#mission">Mission</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+
+<!-- Hero -->
+<header class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">Trusted Pharmaceutical Distributor</span>
+
+        <h1>UQAAB PHARMA</h1>
+
+        <p>
+            Quality healthcare products and reliable pharmaceutical
+            distribution across Kashmir & Ladakh.
+        </p>
+
+        <a class="button" href="#about">
+            Explore Our Company
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- Introduction -->
+<section id="about" class="section-box">
+
+    <h2>Introduction</h2>
+
+    <p>
+        Welcome to UQAAB PHARMA, a pharmaceutical distributor based
+        in Hajin, Bandipora, Jammu & Kashmir. We are committed to
+        providing reliable pharmaceutical distribution and healthcare
+        products to pharmacies, hospitals, clinics and healthcare
+        providers across Kashmir and Ladakh.
+    </p>
+
+</section>
+
+
+<!-- About -->
+<section class="section-box">
+
+    <h2>About Us</h2>
+
+    <p>
+        UQAAB PHARMA is built on quality, reliability and
+        professionalism. With a dedicated workforce and a strong
+        distribution network, we work to ensure timely supply and
+        dependable service to healthcare providers throughout the
+        region.
+    </p>
+
+</section>
+
+
+<!-- Services -->
+<section id="services" class="section-box">
+
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Pharmaceutical Distribution</h3>
+            <p>
+                Reliable distribution of pharmaceutical products to
+                healthcare providers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Healthcare Products</h3>
+            <p>
+                Supply of healthcare and pharmaceutical products.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Reliable Delivery</h3>
+            <p>
+                Timely logistics and delivery services across our
+                distribution network.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Healthcare Support</h3>
+            <p>
+                Dedicated support for pharmacies, hospitals and clinics.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Mission -->
+<section id="mission" class="section-box">
+
+    <h2>Our Mission</h2>
+
+    <p>
+        Our mission is to contribute to better healthcare access by
+        providing reliable pharmaceutical distribution while
+        maintaining high standards of service, professionalism and
+        customer satisfaction.
+    </p>
+
+</section>
+
+
+<!-- Why Choose Us -->
+<section class="section-box">
+
+    <h2>Why Choose Us?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Reliable</h3>
+            <p>Committed to dependable service and distribution.</p>
+        </div>
+
+        <div class="card">
+            <h3>Professional</h3>
+            <p>A dedicated team focused on quality and efficiency.</p>
+        </div>
+
+        <div class="card">
+            <h3>Regional Network</h3>
+            <p>Serving healthcare providers across Kashmir and Ladakh.</p>
+        </div>
+
+        <div class="card">
+            <h3>Customer Focused</h3>
+            <p>We value long-term relationships with our customers.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Values -->
+<section class="section-box">
+
+    <h2>Our Values</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Integrity</h3>
+            <p>We believe in honesty and responsible business.</p>
+        </div>
+
+        <div class="card">
+            <h3>Quality</h3>
+            <p>We remain focused on dependable pharmaceutical service.</p>
+        </div>
+
+        <div class="card">
+            <h3>Commitment</h3>
+            <p>We work continuously to serve our customers better.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Owner Message -->
+<section class="section-box">
+
+    <h2>Owner's Message</h2>
+
+    <p>
+        At UQAAB PHARMA, our goal is to support healthcare providers
+        by ensuring reliable pharmaceutical distribution throughout
+        Kashmir and Ladakh. We remain committed to serving our
+        customers with honesty, efficiency and professionalism.
+    </p>
+
+    <br>
+
+    <p>
+        <strong>— Muzafar Hassan, Owner</strong>
+    </p>
+
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="section-box">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-item">
+        <strong>Address:</strong><br>
+        Near Water Tank, Hajin, Sonawari,<br>
+        Bandipora, Jammu & Kashmir, India
+    </div>
+
+    <div class="contact-item">
+        <strong>Phone:</strong><br>
+        <a href="tel:+918491000909
+            +91 84910 00909
+            </a>
+            
+            <a href="tel:+918899292424
+             +91 88992 92424
+        </a>
+    </div>
+
+    <div class="contact-item">
+        <strong>WhatsApp:</strong><br>
+
+        <a class="whatsapp"
+           href="https://wa.me/918491000909">
+           Chat on WhatsApp
+        </a>
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        © 2026 Uqaab Pharmacy. All Rights Reserved.
+    </p>
+
+    <p>
+        Trusted Pharmaceutical Distribution Across Kashmir & Ladakh
+    </p>
+
+</footer>
+
+</body>
+</html>
